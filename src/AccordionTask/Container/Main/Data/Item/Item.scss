@@ -1,0 +1,87 @@
+@use "../../../../../assets/global" as *;
+@use "../../../../../assets/mixin";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+ul {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+li.fag {
+  background-color: #fff;
+  width: 770px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+
+  &.open {
+    border-radius: 8px 8px 0 0;
+  }
+
+  .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    cursor: pointer;
+    width: 770px;
+    height: 88px;
+    p {
+      font-size: 24px;
+      font-weight: 700;
+      color: #000;
+      margin: 0;
+      font-family: "Inter", sans-serif;
+    }
+
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+
+      img {
+        transition: transform 0.3s ease;
+      }
+    }
+  }
+
+  .answer {
+    background-color: #f7f7f7;
+    padding: 20px 30px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-top: 10px;
+    gap: 20px;
+    @include mixin.flex($direction: column, $align: flex-start);
+    p {
+      font-size: 18px;
+      font-weight: 500;
+      font-family: "Inter", sans-serif;
+    }
+    button {
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+      background: #ff8a00;
+      width: 134px;
+      height: 42px;
+      p {
+        font-size: 18px;
+        font-weight: 500;
+        color: white;
+        font-family: "Inter", sans-serif;
+      }
+      &:hover {
+        background-color: #45a049;
+      }
+    }
+  }
+}

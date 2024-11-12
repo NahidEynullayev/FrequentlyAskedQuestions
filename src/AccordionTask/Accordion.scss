@@ -1,0 +1,12 @@
+@use "../assets/global" as *;
+@use "../assets/mixin" as *;
+.Home {
+  width: 1440px;
+  height: 2183px;
+  //   border: 1px solid red;
+
+  .back {
+    position: absolute;
+    z-index: -1;
+  }
+}

@@ -1,0 +1,20 @@
+@use "../../../assets/mixin" as *;
+@use "../../../assets/global";
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+header {
+  width: 1000px;
+  height: 115px;
+  //   border: 1px solid red;
+  margin: auto;
+  margin-top: 30px;
+  @include flex($align: flex-start);
+
+  h1 {
+    font-size: 96px;
+    font-weight: 400;
+    color: #000;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+  }
+}
