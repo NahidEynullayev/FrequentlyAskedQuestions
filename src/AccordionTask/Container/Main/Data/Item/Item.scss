@@ -18,7 +18,7 @@ li.fag {
   background-color: #fff;
   width: 770px;
   border-radius: 8px;
-  transition: all 0.3s ease;
+  transition: all 10s ease;
 
   &.open {
     border-radius: 8px 8px 0 0;
@@ -46,7 +46,7 @@ li.fag {
       cursor: pointer;
 
       img {
-        transition: transform 0.3s ease;
+        transition: transform 10s ease;
       }
     }
   }
